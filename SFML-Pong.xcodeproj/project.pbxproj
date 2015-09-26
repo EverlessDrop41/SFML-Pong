@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A9D5E111BB6E9D200BC8019 /* Bat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A9D5E0F1BB6E9D200BC8019 /* Bat.cpp */; settings = {ASSET_TAGS = (); }; };
 		6AF524DA1BB41A2B00C80184 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6AF524D91BB41A2B00C80184 /* ResourcePath.mm */; };
 		6AF524DD1BB41A2B00C80184 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AF524DC1BB41A2B00C80184 /* main.cpp */; };
 		6AF524E41BB41A2B00C80184 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AF524E31BB41A2B00C80184 /* sansation.ttf */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A9D5E0F1BB6E9D200BC8019 /* Bat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bat.cpp; sourceTree = "<group>"; };
+		6A9D5E101BB6E9D200BC8019 /* Bat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bat.hpp; sourceTree = "<group>"; };
 		6AF524D41BB41A2B00C80184 /* SFML-Pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SFML-Pong.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF524D81BB41A2B00C80184 /* SFML-Pong-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFML-Pong-Info.plist"; sourceTree = "<group>"; };
 		6AF524D91BB41A2B00C80184 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -34,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A9D5E121BB6EA3100BC8019 /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				6A9D5E0F1BB6E9D200BC8019 /* Bat.cpp */,
+				6A9D5E101BB6E9D200BC8019 /* Bat.hpp */,
+			);
+			name = GameObjects;
+			sourceTree = "<group>";
+		};
 		6AF524CA1BB41A2B00C80184 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +65,7 @@
 		6AF524D61BB41A2B00C80184 /* SFML-Pong */ = {
 			isa = PBXGroup;
 			children = (
+				6A9D5E121BB6EA3100BC8019 /* GameObjects */,
 				6AF524D91BB41A2B00C80184 /* ResourcePath.mm */,
 				6AF524DB1BB41A2B00C80184 /* ResourcePath.hpp */,
 				6AF524DC1BB41A2B00C80184 /* main.cpp */,
@@ -164,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9D5E111BB6E9D200BC8019 /* Bat.cpp in Sources */,
 				6AF524DD1BB41A2B00C80184 /* main.cpp in Sources */,
 				6AF524DA1BB41A2B00C80184 /* ResourcePath.mm in Sources */,
 			);

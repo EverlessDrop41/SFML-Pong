@@ -18,6 +18,7 @@
 #include <SFML/Graphics.hpp>
 // Here is a small helper for you ! Have a look.
 #include "ResourcePath.hpp"
+#include "Bat.hpp"
 
 int main(int, char const**)
 {
@@ -48,6 +49,8 @@ int main(int, char const**)
             if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
                 window.close();
             }
+            
+            
         }
 
         // Clear screen
