@@ -26,7 +26,7 @@ public:
     void SetSize(sf::Vector2<float>);
     void SetPosition(sf::Vector2<float>);
     
-    void Update();
+    void Update(sf::RenderWindow*);
     void Draw(sf::RenderWindow*);
     
     Bat(sf::RectangleShape _shape, sf::Keyboard::Key _upKey, sf::Keyboard::Key _downKey);

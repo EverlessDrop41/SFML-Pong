@@ -23,7 +23,7 @@
 int main(int, char const**)
 {
     // Create the main window
-    sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
+    sf::RenderWindow window(sf::VideoMode(1400, 1000), "SFML window");
 
     // Set the Icon
     sf::Image icon;
@@ -35,7 +35,7 @@ int main(int, char const**)
     //Initialize Game Objects
     sf::RectangleShape p1InitialShape;
     p1InitialShape.setPosition(10, 0);
-    p1InitialShape.setSize(sf::Vector2f(20, 60));
+    p1InitialShape.setSize(sf::Vector2f(20, 100));
     
     Bat player1 = Bat(p1InitialShape, sf::Keyboard::Up, sf::Keyboard::Down);
 
@@ -62,7 +62,7 @@ int main(int, char const**)
         // Clear screen
         window.clear();
         
-        player1.Update();
+        player1.Update(&window);
         player1.Draw(&window);
 
         // Update the window
