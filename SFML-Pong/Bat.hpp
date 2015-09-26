@@ -14,9 +14,11 @@
 
 class Bat {
 public:
-    sf::Rect<float> Shape;
+    sf::RectangleShape Shape;
     sf::Keyboard::Key UpKey = sf::Keyboard::Up;
     sf::Keyboard::Key DownKey = sf::Keyboard::Down;
+    
+    float speed = 3f;
     
     sf::Vector2<float> GetPostion();
     sf::Vector2<float> GetSize();
@@ -24,9 +26,10 @@ public:
     void SetSize(sf::Vector2<float>);
     void SetPosition(sf::Vector2<float>);
     
-    Bat(sf::Rect<float> _shape, sf::Keyboard::Key _upKey, sf::Keyboard::Key _downKey);
-private:
-    float velocity; //Float becuase we only want yMovement
+    void Update();
+    void Draw(sf::RenderWindow*);
+    
+    Bat(sf::RectangleShape _shape, sf::Keyboard::Key _upKey, sf::Keyboard::Key _downKey);
 };
 
 #endif /* Bat_hpp */
