@@ -40,13 +40,12 @@ void Bat::Draw(sf::RenderWindow* win){
 
 void Bat::Update(){
     if (sf::Keyboard::isKeyPressed(this->UpKey)) {
-        float newX = this->Shape.getPosition().x + this->speed;
-        this->SetPosition(sf::Vector2f(newX, this->GetPostion().y));
+        float newY = this->Shape.getPosition().y + (this->speed * -1);
+        this->SetPosition(sf::Vector2f(this->GetPostion().x, newY));
     }
     
     if (sf::Keyboard::isKeyPressed(this->DownKey)) {
-        float newX = this->Shape.getPosition().x + this->speed;
-        newX *= -1;
-        this->SetPosition(sf::Vector2f(newX, this->GetPostion().y));
+        float newY = this->Shape.getPosition().y + this->speed;
+        this->SetPosition(sf::Vector2f(this->GetPostion().x, newY));
     }
 }

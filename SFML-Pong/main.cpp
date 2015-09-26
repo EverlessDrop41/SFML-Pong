@@ -32,6 +32,12 @@ int main(int, char const**)
     }
     window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
     
+    //Initialize Game Objects
+    sf::RectangleShape p1InitialShape;
+    p1InitialShape.setPosition(10, 0);
+    p1InitialShape.setSize(sf::Vector2f(20, 60));
+    
+    Bat player1 = Bat(p1InitialShape, sf::Keyboard::Up, sf::Keyboard::Down);
 
     // Start the game loop
     while (window.isOpen())
@@ -55,6 +61,9 @@ int main(int, char const**)
 
         // Clear screen
         window.clear();
+        
+        player1.Update();
+        player1.Draw(&window);
 
         // Update the window
         window.display();

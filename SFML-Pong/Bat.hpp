@@ -18,7 +18,7 @@ public:
     sf::Keyboard::Key UpKey = sf::Keyboard::Up;
     sf::Keyboard::Key DownKey = sf::Keyboard::Down;
     
-    float speed = 3f;
+    float speed = 3;
     
     sf::Vector2<float> GetPostion();
     sf::Vector2<float> GetSize();
